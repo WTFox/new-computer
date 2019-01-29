@@ -160,21 +160,9 @@ done
 
 echo "Starting brew app install..."
 
-### Window Management
-# Todo: Try Divvy and spectacles in the future
-brew cask install sizeup  # window manager
-
-# Start SizeUp at login
-defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
-
-# Don’t show the preferences window on next start
-defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
-
-
 ### Developer Tools
 brew cask install iterm2
 brew cask install dash
-brew install ispell
 
 
 ### Development
@@ -202,10 +190,7 @@ brew install pyenv
 
 
 ### Microcontrollers & Electronics
-brew install avrdude
 brew cask install arduino
-# Manually install teensyduino from:
-# https://www.pjrc.com/teensy/td_download.html
 
 
 ### Dev Editors 
@@ -219,9 +204,7 @@ brew linkapps emacs-plus
 
 
 ### Writing
-brew cask install evernote
 brew cask install macdown
-brew cask install notion
 
 
 ### Conferences, Blogging, Screencasts
@@ -231,7 +214,6 @@ brew cask install screenflow
 
 
 ### Productivity
-brew cask install wavebox
 brew cask install google-chrome
 brew cask install alfred
 brew cask install dropbox
@@ -239,7 +221,6 @@ brew cask install dropbox
 brew cask install timing  # time and project tracker
 brew cask install keycastr  # show key presses on screen (for gifs & screencasts)
 brew cask install betterzip
-brew cask install caffeine  # keep computer from sleeping
 brew cask install skitch  # app to annotate screenshots
 brew cask install muzzle
 brew cask install flux
@@ -247,7 +228,6 @@ brew cask install flux
 
 ### Keyboard & Mouse
 brew cask install karabiner-elements  # remap keys, emacs shortcuts
-brew cask install scroll-reverser  # allow natural scroll for trackpad, not for mouse
 
 
 ### Quicklook plugins https://github.com/sindresorhus/quick-look-plugins
@@ -261,15 +241,12 @@ brew cask install quicklook-csv  # preview csvs
 
 ### Chat / Video Conference
 brew cask install slack
-brew cask install microsoft-teams
-brew cask install zoomus
-brew cask install signal
+# brew cask install zoomus
+# brew cask install signal
 
 
 ### Music and Video
-brew cask install marshallofsound-google-play-music-player
-brew cask install vlc
-
+brew cask install iina 
 
 ### Run Brew Cleanup
 brew cleanup
@@ -310,11 +287,22 @@ echo "Is app store login complete.(y/n)? "
 read response
 if [ "$response" != "${response#[Yy]}" ]
 then
-	mas install 907364780  # Tomato One - Pomodoro timer
-	mas install 485812721  # Tweetdeck
-	mas install 668208984  # GIPHY Capture. The GIF Maker (For recording my screen as gif)
-	mas install 1351639930 # Gifski, convert videos to gifs
-	mas install 414030210  # Limechat, IRC app.
+    mas install 409183694   # Keynote
+    mas install 409203825   # Numbers
+
+    mas install 926036361   # LastPass
+    mas install 918858936   # Airmail
+    mas install 904280696   # Things3
+    mas install 736189492   # Notability
+    mas install 1091189122  # Bear
+    mas install 417375580   # BetterSnapTool
+    mas install 907364780   # Tomato One - Pomodoro timer
+    mas install 557168941   # Tweetbot
+    mas install 937984704   # Amphetimine
+
+    mas install 668208984   # GIPHY Capture. The GIF Maker (For recording my screen as gif)
+    mas install 1351639930  # Gifski, convert videos to gifs
+    mas install 414030210   # Limechat, IRC app.
 else
 	cecho "App Store login not complete. Skipping installing App Store Apps" $red
 fi
@@ -329,6 +317,7 @@ echo "Installing global Python packages..."
 pip3 install --upgrade pip
 pip3 install --user pylint
 pip3 install --user flake8
+pip3 install --user black
 
 
 #############################################
@@ -367,7 +356,7 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide -bool true
 
 # Only Show Open Applications In The Dock  
-defaults write com.apple.dock static-only -bool true
+# defaults write com.apple.dock static-only -bool true
 
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
@@ -391,9 +380,6 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
-
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
 
 # Don’t show recent applications in Dock
 #    defaults write com.apple.dock show-recents -bool false
@@ -441,7 +427,7 @@ defaults write com.apple.screencapture location -string "$HOME/Desktop"
 defaults write com.apple.screencapture type -string "png"
 
 # Disable shadow in screenshots
-defaults write com.apple.screencapture disable-shadow -bool true
+# defaults write com.apple.screencapture disable-shadow -bool true
 
 ###############################################################################
 # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
@@ -479,14 +465,14 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Disable force click and haptic feedback
-defaults write ~/Library/Preferences/com.apple.AppleMultitouchTrackpad.plist ForceSuppressed -bool true
+# defaults write ~/Library/Preferences/com.apple.AppleMultitouchTrackpad.plist ForceSuppressed -bool true
 
 # Mouse settings
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse.plist MouseOneFingerDoubleTapGesture -int 0
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse.plist MouseTwoFingerDoubleTapGesture -int 3
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse.plist MouseTwoFingerHorizSwipeGesture -int 2
-defaults write ~/Library/Preferences/.GlobalPreferences.plist com.apple.mouse.scaling -float 3
-defaults write ~/Library/Preferences/.GlobalPreferences.plist com.apple.swipescrolldirection -boolean NO
+# defaults write com.apple.driver.AppleBluetoothMultitouch.mouse.plist MouseOneFingerDoubleTapGesture -int 0
+# defaults write com.apple.driver.AppleBluetoothMultitouch.mouse.plist MouseTwoFingerDoubleTapGesture -int 3
+# defaults write com.apple.driver.AppleBluetoothMultitouch.mouse.plist MouseTwoFingerHorizSwipeGesture -int 2
+# defaults write ~/Library/Preferences/.GlobalPreferences.plist com.apple.mouse.scaling -float 3
+# defaults write ~/Library/Preferences/.GlobalPreferences.plist com.apple.swipescrolldirection -boolean NO
 
 
 ###############################################################################
@@ -520,16 +506,18 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 #############################################
 ### Install dotfiles repo, run link script
 #############################################
-# TODO: 
-# clean up my personal repo to make it public
 # dotfiles for vs code, emacs, gitconfig, oh my zsh, etc. 
-# git clone git@github.com:nnja/dotfiles.git
-# cd dotfiles
-# fetch submodules for oh-my-zsh
-# git submodule init && git submodule update && git submodule status
-# make symbolic links and change shell to zshell
-# ./makesymlinks.sh
-# upgrade_oh_my_zsh
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+git clone git@github.com:wtfox/dotfiles.git $HOME/dotfiles
+cd $HOME/dotfiles
+
+## Install the rest of the brew apps
+brew bundle 
+
+./makesymlinks.sh
+
 
 
 echo ""
