@@ -319,6 +319,9 @@ pip3 install --user pylint
 pip3 install --user flake8
 pip3 install --user black
 
+pip install --user neovim
+pip3 install --user neovim
+
 
 #############################################
 ### Set OSX Preferences - Borrowed from https://github.com/mathiasbynens/dotfiles/blob/master/.macos
