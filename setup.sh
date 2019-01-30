@@ -158,6 +158,8 @@ done
 # Install via Brew           #
 ##############################
 
+xcode-select --install
+
 echo "Starting brew app install..."
 
 ### Developer Tools
@@ -401,6 +403,13 @@ defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 ##################
+### Terminal
+##################
+
+# UTF-8 Terminal happiness
+defaults write com.apple.terminal StringEncodings -array 4
+
+##################
 ### Text Editing / Keyboards
 ##################
 
@@ -461,7 +470,7 @@ killall mds
 # defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Stop iTunes from responding to the keyboard media keys
-#launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -521,9 +530,10 @@ brew bundle
 
 ./makesymlinks.sh
 
+brew cleanup 
+
 # Install vim-plug
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 
 echo ""
 cecho "Done!" $cyan
