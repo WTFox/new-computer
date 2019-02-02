@@ -40,6 +40,7 @@ cecho() {
   return
 }
 
+
 echo ""
 cecho "###############################################" $red
 cecho "#        DO NOT RUN THIS SCRIPT BLINDLY       #" $red
@@ -195,6 +196,7 @@ pip3 install --upgrade pip
 pip3 install --user pylint
 pip3 install --user flake8
 pip3 install --user black
+pip3 install --user glances
 pip install --user neovim
 pip3 install --user neovim
 
@@ -391,6 +393,34 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 #############################################
 ### Install dotfiles repo, run link script
 #############################################
+
+# Install global node modules
+npm install -g grunt-cli
+npm install -g particle-cli
+npm install -g pure-prompt
+npm install -g tldr
+npm install -g fkill-cli
+npm install -g castnow
+npm install -g create-react-app
+npm install -g create-react-library
+npm install -g react-native-cli
+
+# linting
+npm install -g eslint
+npm install -g babel-eslint
+npm install -g eslint-config-standard
+npm install -g eslint-config-standard-react
+npm install -g eslint-config-standard-jsx
+npm install -g eslint-plugin-react
+npm install -g eslint-config-prettier
+npm install -g eslint-plugin-prettier
+npm install -g prettier
+npm install -g standard
+npm install -g typescript
+
+# Set up git
+git config --global user.name "A. Fox"
+git config --global user.email anthonyfox1988@gmail.com
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
