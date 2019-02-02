@@ -629,8 +629,6 @@ Unchecked:
 **General**
 
 * Recent items: None
-* Appearance: Graphite
-* Highlight color: Pink
 
 **Mission Control**
 
