@@ -158,6 +158,7 @@ cask "firefox"
 cask "flux"
 cask "font-fira-code"
 cask "font-fira-mono-for-powerline"
+cask "font-noto-color-emoji"
 cask "gitify"
 cask "gitkraken"
 cask "google-chrome"
@@ -184,6 +185,7 @@ cask "spotify"
 cask "timing"
 cask "transmit"
 cask "visual-studio-code"
+cask "yakyak"
 
 mas "Airmail 3", id: 918858936
 mas "Amphetamine", id: 937984704
