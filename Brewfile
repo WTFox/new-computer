@@ -191,7 +191,6 @@ cask "timing"
 cask "transmit"
 cask "visual-studio-code"
 cask "yakyak"
-cask "zoom"
 
 mas "Airmail 3", id: 918858936
 mas "Amphetamine", id: 937984704
