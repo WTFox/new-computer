@@ -195,7 +195,7 @@ cask "yakyak"
 mas "Airmail 3", id: 918858936
 mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
-mas "BetterSnapTool", id: 417375580
+mas "Magnet", id: 441258766
 mas "Gifski", id: 1351639930
 mas "GIPHY CAPTURE", id: 668208984
 mas "iZip Unarchiver", id: 717545828
