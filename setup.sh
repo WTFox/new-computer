@@ -9,10 +9,12 @@
 
 echo "I  ❤️  🍎"
 echo "Mac OS Install Setup Script"
-echo "By Nina Zakharenko"
-echo "Follow me on twitter! https://twitter.com/nnja"
+echo "By Anthony Fox"
+echo "With a lot of help from Nina Zakharenko"
+echo "Follow me on twitter! https://twitter.com/__wtfox__"
 
 # Some configs reused from:
+# https://github.com/nnja/new-computer/
 # https://github.com/ruyadorno/installme-osx/
 # https://gist.github.com/millermedeiros/6615994
 # https://gist.github.com/brandonb927/3195465/
