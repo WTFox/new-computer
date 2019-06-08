@@ -192,6 +192,7 @@ cask "transmit"
 cask "visual-studio-code"
 cask "yakyak"
 
+mas "1Password", id: 1333542190 
 mas "Airmail 3", id: 918858936
 mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
