@@ -400,7 +400,6 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 npm install -g grunt-cli
 npm install -g particle-cli
 npm install -g pure-prompt
-npm install -g tldr
 npm install -g fkill-cli
 npm install -g castnow
 npm install -g create-react-app
