@@ -398,6 +398,7 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 
 # Install global node modules
 npm install -g grunt-cli
+npm install -g gatsby-cli
 npm install -g particle-cli
 npm install -g pure-prompt
 npm install -g fkill-cli

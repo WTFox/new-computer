@@ -164,7 +164,6 @@ cask "flux"
 cask "font-fira-code"
 cask "font-fira-mono-for-powerline"
 cask "font-noto-color-emoji"
-cask "gitify"
 cask "gitkraken"
 cask "google-chrome"
 cask "google-backup-and-sync"
@@ -172,19 +171,16 @@ cask "iina"
 cask "imageoptim"
 cask "istat-menus"
 cask "iterm2"
-cask "karabiner-elements"
 cask "keycastr"
-cask "macdown"
 cask "muzzle"
-cask "phpstorm"
 cask "pycharm"
 cask "qlcolorcode"
 cask "qlmarkdown"
 cask "qlstephen"
 cask "quicklook-csv"
 cask "quicklook-json"
+cask "selfcontrol"
 cask "screenflow"
-cask "skitch"
 cask "slack"
 cask "spotify"
 cask "timing"
@@ -193,16 +189,12 @@ cask "visual-studio-code"
 cask "yakyak"
 
 mas "1Password", id: 1333542190 
-mas "Airmail 3", id: 918858936
 mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
 mas "Magnet", id: 441258766
 mas "Gifski", id: 1351639930
 mas "GIPHY CAPTURE", id: 668208984
-mas "iZip Unarchiver", id: 717545828
 mas "Keynote", id: 409183694
-mas "LastPass", id: 926036361
-mas "Limechat", id: 414030210
 mas "Notability", id: 736189492
 mas "Numbers", id: 409203825
 mas "PiPifier", id: 1160374471
@@ -211,4 +203,4 @@ mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Things3", id: 904280696
 mas "Tomato One", id: 907364780
-mas "Tweetbot", id: 557168941
+mas "Twitter", id: 1482454543
