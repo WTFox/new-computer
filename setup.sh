@@ -195,12 +195,13 @@ cd ~/Library/Fonts && { curl -O 'https://github.com/Falkor/dotfiles/blob/master/
 echo "Installing global Python packages..."
 
 pip3 install --upgrade pip
-pip3 install --user pylint
-pip3 install --user flake8
-pip3 install --user black
-pip3 install --user glances
+pip3 install --user pipx
+pipx install pylint
+pipx install flake8
+pipx install black
+pipx install glances
 pip install --user neovim
-pip3 install --user neovim
+pipx install neovim
 
 
 #############################################

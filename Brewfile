@@ -150,7 +150,7 @@ cask "arduino"
 cask "aws-vault"
 cask "bartender"
 cask "balenaetcher"
-cask "betterzip"
+cask "clipy"
 cask "cloudapp"
 cask "cyberduck"
 cask "dash"
@@ -191,6 +191,7 @@ cask "yakyak"
 mas "1Password", id: 1333542190 
 mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
+mas "FocusList", id: 1083376166
 mas "Magnet", id: 441258766
 mas "Gifski", id: 1351639930
 mas "GIPHY CAPTURE", id: 668208984
