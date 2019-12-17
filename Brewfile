@@ -15,6 +15,7 @@ tap "homebrew/dupes"
 tap "homebrew/versions"
 
 brew "ack"
+brew "archey"
 brew "autoconf"
 brew "automake"
 brew "awk"
