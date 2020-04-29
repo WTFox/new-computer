@@ -407,6 +407,7 @@ npm install -g castnow
 npm install -g create-react-app
 npm install -g create-react-library
 npm install -g react-native-cli
+npm install -g yarn
 
 # linting
 npm install -g eslint
