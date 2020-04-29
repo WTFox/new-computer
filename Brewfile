@@ -183,11 +183,9 @@ cask "imageoptim"
 cask "istat-menus"
 cask "iterm2"
 cask "java"
-cask "karabiner-elements"
 cask "keycastr"
 cask "macdown"
 cask "muzzle"
-cask "phpstorm"
 cask "postgres"
 cask "postman"
 cask "pycharm"
@@ -228,5 +226,4 @@ mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "Tomato One", id: 907364780
-mas "Trello", id: 1278508951
 mas "Twitter", id: 1482454543
