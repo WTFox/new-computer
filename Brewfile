@@ -51,6 +51,7 @@ brew "entr"
 brew "exa"
 brew "exercism"
 brew "libevent"
+brew "fd"
 brew "figlet"
 brew "fortune"
 brew "libtool"
@@ -152,6 +153,7 @@ brew "github/gh/gh"
 brew "jeroenknoops/tap/gitin"
 brew "rigellute/tap/spotify-tui"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+
 cask "1password-cli"
 cask "aerial"
 cask "alfred"
@@ -200,14 +202,14 @@ cask "screenflow"
 cask "selfcontrol"
 cask "snowflake-snowsql"
 cask "spotify"
+cask "Steam"
 cask "timing"
 cask "transmit"
-cask "ubersicht"
 cask "visual-studio-code"
 cask "yakyak"
+
 mas "1Password 7", id: 1333542190
 mas "Amphetamine", id: 937984704
-mas "Bear", id: 1091189122
 mas "FocusList", id: 1086877679
 mas "GarageBand", id: 682658836
 mas "GIPHY CAPTURE", id: 668208984
@@ -221,9 +223,7 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "PiPifier", id: 1160374471
 mas "Slack", id: 803453959
-mas "SonicWall Mobile Connect", id: 822514576
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
-mas "Things", id: 904280696
 mas "Tomato One", id: 907364780
 mas "Twitter", id: 1482454543
