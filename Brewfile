@@ -218,7 +218,9 @@ mas "GIPHY CAPTURE", id: 668208984
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
+mas "MenuBar Stats", id: 714196447
 mas "Mimeo Photos", id: 1282504627
+mas "Mini Calendar", id: 1088779979
 mas "Motif", id: 1404636482
 mas "Notability", id: 736189492
 mas "Numbers", id: 409203825
